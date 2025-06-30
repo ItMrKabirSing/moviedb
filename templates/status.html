@@ -299,7 +299,7 @@
             document.getElementById('movieResults').innerHTML = '';
 
             try {
-                const response = await fetch(`http://localhost:5000/api?query=${encodeURIComponent(query)}`);
+                const response = await fetch(`https://moviedb-liart.vercel.app/api?query=${encodeURIComponent(query)}`);
                 const data = await response.json();
 
                 showLoading(false);
